@@ -54,7 +54,7 @@ try:
 
     st.sidebar.subheader("Option parameters")
     K = st.sidebar.slider("Strike Price (K)", float(S*0.7), float(S*1.3), float(S), 0.1)
-    T_days = st.sidebar.slider("Days to expiration", 1, 730, 30)
+    T_days = st.sidebar.slider("Days to expiration", 1, 365, 30)
     r_pct = st.sidebar.slider("Risk free rate (%)", 0.0, 10.0, value=3.0, step=0.05)
 
     T = T_days / 365
@@ -67,7 +67,7 @@ try:
     st.subheader("Option pricing & Greeks")
     col1, col2, col3, col4 = st.columns(4)
     with col1:
-        st.metric("Cena Call / Put", f"${c_p:.2f} / ${p_p:.2f}")
+        st.metric("Price Call / Put", f"${c_p:.2f} / ${p_p:.2f}")
     with col2:
         st.metric("Delta Call / Put", f"{c_d:.3f} / {p_d:.3f}")
     with col3:
