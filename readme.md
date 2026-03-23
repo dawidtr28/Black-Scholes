@@ -26,4 +26,4 @@ An interactive web application built with **Streamlit** that allows users to pri
    ```bash
    git clone https://github.com/dawidtr28/Black-Scholes.git
    cd Black-Scholes
-   run app.py
+   steamlit run app.py
