@@ -69,11 +69,11 @@ try:
     with col1:
         st.metric("Price Call / Put", f"${c_p:.2f} / ${p_p:.2f}")
     with col2:
-        st.metric("Delta Call / Put", f"{c_d:.3f} / {p_d:.3f}")
+        st.metric("Δ Delta Call / Put", f"{c_d:.3f} / {p_d:.3f}")
     with col3:
-        st.metric("Gamma | Vega", f"{gam:.4f} | {veg:.2f}")
+        st.metric("Γ Gamma | v Vega", f"{gam:.4f} | {veg:.2f}")
     with col4:
-        st.metric("Theta Call / Put", f"{c_t:.4f} / {p_t:.4f}")
+        st.metric("Θ Theta Call / Put", f"{c_t:.4f} / {p_t:.4f}")
 
     st.divider()
 
