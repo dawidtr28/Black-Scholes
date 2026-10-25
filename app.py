@@ -112,7 +112,7 @@ try:
             base_color = "#ff0000"
 
         
-        if position == "Sprzedaż (Short)":
+        if position == "Sell (Short)":
             pnl = -pnl
             color = "#ffaa00" if opt_type == "Call" else "#00aaff" 
         else:
